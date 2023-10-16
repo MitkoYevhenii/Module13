@@ -5,13 +5,16 @@ import lombok.Data;
 
 @Data
 @Builder
-public class PostUser {
+public class User {
     private Long userId;
     private Long id;
     private String title;
     private String body;
 
-    public PostUser(Long userId) {
-
+    public User(Long userId, Long id, String title, String body) {
+        this.userId = userId;
+        this.id = id;
+        this.title = title;
+        this.body = body;
     }
 }
